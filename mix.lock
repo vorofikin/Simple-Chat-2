@@ -1,0 +1,8 @@
+%{
+  "cowboy": {:hex, :cowboy, "2.8.0", "f3dc62e35797ecd9ac1b50db74611193c29815401e53bac9a5c0577bd7bc667d", [:rebar3], [{:cowlib, "~> 2.9.1", [hex: :cowlib, repo: "hexpm", optional: false]}, {:ranch, "~> 1.7.1", [hex: :ranch, repo: "hexpm", optional: false]}], "hexpm", "4643e4fba74ac96d4d152c75803de6fad0b3fa5df354c71afdd6cbeeb15fac8a"},
+  "cowlib": {:hex, :cowlib, "2.9.1", "61a6c7c50cf07fdd24b2f45b89500bb93b6686579b069a89f88cb211e1125c78", [:rebar3], [], "hexpm", "e4175dc240a70d996156160891e1c62238ede1729e45740bdd38064dad476170"},
+  "n2o": {:hex, :n2o, "8.12.2", "a392e6ab8af854d922b237d442cdfbe80364046f70f3c0c380dbbe8dfba580c5", [:mix, :rebar3], [], "hexpm", "fff362614db339f7ecc5528bb980ea79056c67a65bbe52766f6ee0e8323dc78c"},
+  "nitro": {:hex, :nitro, "7.4.2", "19e2ef31ad75406a9852f8176f78d615b9d4ca3e404847efd1934e44ee3e8b88", [:mix, :rebar3], [], "hexpm", "6aa457a6f6a6af337b3f2a6286b9293714e0bd9ee4e7326150a7eba9adb0201d"},
+  "ranch": {:hex, :ranch, "1.7.1", "6b1fab51b49196860b733a49c07604465a47bdb78aa10c1c16a3d199f7f8c881", [:rebar3], [], "hexpm", "451d8527787df716d99dc36162fca05934915db0b6141bbdac2ea8d3c7afc7d7"},
+  "syn": {:hex, :syn, "2.1.1", "51bb544ce3afcd84cfed4074b22d56143420e64a28a4d59af3cf0330a8635901", [:rebar3], [], "hexpm", "40c43ffabf70d6165f862748bb28f1adaf6324fd38ceee24733b0dc1067ab358"},
+}
