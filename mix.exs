@@ -23,18 +23,20 @@ defmodule InfotechTestTask.MixProject do
   # Run "mix help compile.app" to learn about applications.
   def application do
     [
-      extra_applications: [:logger, :xmerl, :crypto, :ex_doc],
-      applications: [:xmerl]
+      extra_applications: [:logger, :xmerl, :crypto],
+      mod: {InfotechTestTask, []},
+      applications: [:ranch, :cowboy, :logger, :n2o, :syn, :nitro, :xmerl, :cowlib, :public_key]
     ]
   end
 
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
+      {:ex_doc, "~> 0.29.0", only: :dev},
       {:cowboy, "~> 2.8.0"},
       {:syn,"~> 2.1.1"},
       {:nitro, "~> 7.4.1"},
-      {:n2o,"~> 8.12.1"}
+      {:n2o, "~> 10.12"}
     ]
   end
 end

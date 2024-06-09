@@ -9,13 +9,10 @@ defmodule InfotechTestTask do
 
 
   def initialize_app() do
-    IO.inspect :cowboy.start_clear(
+    :cowboy.start_clear(
       :http,
-      :application.get_env(:n2o_cowboy, :port, 8080),
-      %{env: %{
-        dispatch: :n2o_cowboy.points
-        }
-      }
+      [{:port, :application.get_env(:n2o, :port, 8080)}],
+      %{env: %{dispatch: :n2o_cowboy.points()}}
     )
   end
 end

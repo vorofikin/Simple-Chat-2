@@ -1,21 +1,11 @@
 # InfotechTestTask
+# Andrew Nikiforov
 
-**TODO: Add description**
+## Setup
 
-## Installation
-
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `infotech_test_task` to your list of dependencies in `mix.exs`:
-
-```elixir
-def deps do
-  [
-    {:infotech_test_task, "~> 0.1.0"}
-  ]
-end
 ```
+mix deps.get
+mix run --no-halt
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at <https://hexdocs.pm/infotech_test_task>.
-
+http://localhost:8080/app/index.htm
+```

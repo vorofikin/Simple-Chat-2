@@ -1,5 +1,5 @@
 defmodule Routes do
-  require N2O
+  require N2O;
 
   def finist(state, context), do: {:ok, state, context}
 
@@ -12,10 +12,10 @@ defmodule Routes do
   defp route_prefix(<<"/", p::binary>>), do: route(p)
   defp route_prefix(path), do: route(path)
 
-  defp route(<<>>), do: InfotechTestTask.Index
-  defp route(<<"index", _::binary>>), do: InfotechTestTask.Index
-  defp route(<<"login", _::binary>>), do: Sample.Login
-  defp route(<<"app/index", _::binary>>), do: Sample.Index
-  defp route(<<"app/login", _::binary>>), do: Sample.Login
-  defp route(_), do: Sample.Login
+  defp route(<<>>), do: Index
+  defp route(<<"index", _::binary>>), do: Index
+  defp route(<<"room", _::binary>>), do: Room
+  defp route(<<"app/index", _::binary>>), do: Index
+  defp route(<<"app/room", _::binary>>), do: Room
+  defp route(_), do: Index
 end
